@@ -1,17 +1,17 @@
 const mongoose = require('mongoose');
 
-const mongoURI ="mongodb+srv://kunalagra197:kunalagrawal@atlascluster.ttrq1f8.mongodb.net/Volunteer?retryWrites=true&w=majority"
+const mongoURI = 'mongodb+srv://jainprak007:HArsh@cluster0.ptursrz.mongodb.net/voulenteer_data?retryWrites=true&w=majority';
 
-
-const connectToMongo = ()=>{
+//connect to mongo    
+const connectToMongo = () => {
     mongoose.set('strictQuery', false);
-    
+    // console.log(mongoURI); // Print the URI for verification
     mongoose.connect(mongoURI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         // useCreateIndex: true,
         // useFindAndModify: false,
-       }).then(() => console.log("Database connected!")).catch(err => console.log(err));
+    }).then(() => console.log("Database connected!", mongoURI)).catch(err => console.log(err));
 }
- 
-module.exports = connectToMongo;   
+
+module.exports = connectToMongo;

@@ -1,8 +1,8 @@
 const nodemailer = require("nodemailer");
 const Event = require("./models/Event"); 
 const moment = require("moment");
-const email="kunalagra0197@gmail.com";
-const password="fclkvkwoedhswthf";
+const email="jainprak007@gmail.com";
+const password="iqtmiguvrtsnqkbd";
 
 
 const mailer = async () => {
